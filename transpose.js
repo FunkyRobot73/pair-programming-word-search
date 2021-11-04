@@ -1,3 +1,5 @@
+const net = require("net");
+
 const transpose = function(matrix) {
   // Put your solution here
 
@@ -25,25 +27,26 @@ const printMatrix = (matrix) => {
   }
 }
 
+module.exports = {transpose}
 
+// printMatrix(transpose([
+// [1, 2, 3, 4],
+// [1, 2, 3, 4],
+// [1, 2, 3, 4],
+// [1, 2, 3, 4]
+// ]));
 
-printMatrix(transpose([
-[1, 2, 3, 4],
-[1, 2, 3, 4],
-[1, 2, 3, 4],
-[1, 2, 3, 4]
-]));
+// console.log('----')
 
-console.log('----')
+// printMatrix(transpose([
+// [1, 2],
+// [3, 4],
+// [5, 6]
+// ]));
 
-printMatrix(transpose([
-[1, 2],
-[3, 4],
-[5, 6]
-]));
+// console.log('----')
 
-console.log('----')
+// printMatrix(transpose([
+// [1, 2, 3, 4, 5, 6, 7]
+// ]));
 
-printMatrix(transpose([
-[1, 2, 3, 4, 5, 6, 7]
-]));
